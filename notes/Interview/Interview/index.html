@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta name="generator" content="Hexo 5.4.0">
+  <meta charset="utf-8">
+  
+
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <title>page - Yuhan's Blog</title>
+
+  
+    <meta name="description" content="测试开发岗 面经整理腾讯： 数据库相关（重点），测试知识相关，linux知识 [TOC] 1 设计模式？？？？？？？单例模式 观察者模式 装饰模式 适配器模式 工厂模式 2 计网基础  TCP和UDP的区别？ ip报文&#x2F;tcp报文具体内容 HTTP&#x2F;HTTPS HTTP长连接端连接了解吗   协议 微信和qq传输消息用的哪个协议？   三次握手&#x2F;四次挥手 DNS具体流程  socket   浏览器">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Yuhan&#39;s Blog">
+<meta property="og:url" content="http://yuhanyue.github.io/notes/Interview/Interview/index.html">
+<meta property="og:site_name" content="Yuhan&#39;s Blog">
+<meta property="og:description" content="测试开发岗 面经整理腾讯： 数据库相关（重点），测试知识相关，linux知识 [TOC] 1 设计模式？？？？？？？单例模式 观察者模式 装饰模式 适配器模式 工厂模式 2 计网基础  TCP和UDP的区别？ ip报文&#x2F;tcp报文具体内容 HTTP&#x2F;HTTPS HTTP长连接端连接了解吗   协议 微信和qq传输消息用的哪个协议？   三次握手&#x2F;四次挥手 DNS具体流程  socket   浏览器">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-04-29T14:16:50.924Z">
+<meta property="article:modified_time" content="2021-04-29T14:16:50.924Z">
+<meta property="article:author" content="Yuhan">
+<meta name="twitter:card" content="summary">
+  
+  
+
+  <!-- feed -->
+  
+
+  
+    
+<link rel="stylesheet" href="/css/main.css">
+
+  
+
+  
+</head>
+
+<body theme='light'>
+  
+
+
+  <div class='l_body' id='start'>
+    <aside class='l_left'>
+    
+
+<header class='header'>
+  <div class='logo-wrap'>
+  
+    <a class='avatar' target="_blank" rel="noopener" href='https://pbs.twimg.com/media/EnfJgj9VcAITqVx?format=jpg&name=4096x4096'><img no-lazy src='https://pbs.twimg.com/media/EnfJgj9VcAITqVx?format=jpg&name=4096x4096'/></a>
+  
+  
+    <a class='title' href='/Overainy%F0%9F%90%88'>Overainy🐈</a>
+  
+</div>
+
+  <nav class="menu dis-select"><a class="nav-item" href="/">主页</a><a class="nav-item" href="/notes">笔记</a><a class="nav-item" href="/friends/">友链</a><a class="nav-item" href="/about/">关于</a></nav>
+</header>
+
+<div class='widgets'>
+  
+    
+      
+      <div class='widget-wrap' id='markdown'>
+  <div class='widget-header h4 dis-select'>
+    <span class='name'>Welcome！</span>
+  </div>
+  <div class='widget-body fs14'>
+    
+      <p>Welcome to Yuhan Blog 🎉！</p>
+
+    
+  </div>
+</div>
+
+    
+  
+    
+      
+      
+<div class="widget-wrap" id="recent"><div class="widget-header h4 dis-select"><span class="name">Recent Update</span></div><div class="widget-body fs14"><div class="post-title reveal"><div class="cap"><time>2021-04-10</time></div><a href="/2021/04/03/hexo+github%20page/">📖如何使用hexo + github page配置个人博客</a></div></div></div>
+
+    
+  
+</div>
+
+
+    </aside>
+    <div class='l_main'>
+      
+  
+<header class='header mobile-only'>
+  <div class='logo-wrap'>
+  
+    <a class='avatar' target="_blank" rel="noopener" href='https://pbs.twimg.com/media/EnfJgj9VcAITqVx?format=jpg&name=4096x4096'><img no-lazy src='https://pbs.twimg.com/media/EnfJgj9VcAITqVx?format=jpg&name=4096x4096'/></a>
+  
+  
+    <a class='title' href='/Overainy%F0%9F%90%88'>Overainy🐈</a>
+  
+</div>
+
+  <nav class="menu dis-select"><a class="nav-item" href="/">主页</a><a class="nav-item" href="/notes">笔记</a><a class="nav-item" href="/friends/">友链</a><a class="nav-item" href="/about/">关于</a></nav>
+</header>
+
+
+
+      
+
+  
+  <div class='bread-nav fs12'>
+  
+      <div id='breadcrumb'>
+        <a class='cap breadcrumb' href='/'>Home</a>
+        <span class="sep"></span>
+        <a class='cap breadcrumb' href='/notes/Interview/Interview/index.html'></a>
+      </div>
+  
+  </div>
+
+
+  <article class='content md page'>
+  
+  
+    <h1 id="测试开发岗-面经整理"><a href="#测试开发岗-面经整理" class="headerlink" title="测试开发岗 面经整理"></a>测试开发岗 面经整理</h1><p>腾讯： 数据库相关（重点），测试知识相关，linux知识</p>
+<p>[TOC]</p>
+<h2 id="1-设计模式"><a href="#1-设计模式" class="headerlink" title="1 设计模式"></a>1 设计模式</h2><p>？？？？？？？<br>单例模式</p>
+<p>观察者模式</p>
+<p>装饰模式</p>
+<p>适配器模式</p>
+<p>工厂模式</p>
+<h2 id="2-计网"><a href="#2-计网" class="headerlink" title="2 计网"></a>2 计网</h2><p><strong>基础</strong></p>
+<ol>
+<li>TCP和UDP的区别？</li>
+<li>ip报文/tcp报文具体内容</li>
+<li>HTTP/HTTPS<ul>
+<li>HTTP长连接端连接了解吗</li>
+</ul>
+</li>
+<li>协议<ul>
+<li>微信和qq传输消息用的哪个协议？</li>
+</ul>
+</li>
+<li>三次握手/四次挥手</li>
+<li>DNS具体流程</li>
+<li><font color=red> socket</font> </li>
+</ol>
+<p><strong>浏览器</strong></p>
+<ol>
+<li><p>url沾到浏览器后返回网页的过程</p>
+</li>
+<li><p>具体讲讲浏览器是如何呈现的</p>
+</li>
+<li><p>cookie和session</p>
+</li>
+<li><p>GET()和POST()有什么区别</p>
+</li>
+<li><p>Error和Exception的区别</p>
+</li>
+</ol>
+<h2 id="3-操作系统"><a href="#3-操作系统" class="headerlink" title="3 操作系统"></a>3 操作系统</h2><ol>
+<li><p> 讲一下进程和线程的区别</p>
+</li>
+<li><p>线程的sleep和wait有什么区别</p>
+</li>
+<li><p>内存泄漏和内存溢出是什么原因导致，怎么解决</p>
+</li>
+<li><p>死锁如何产生/避免</p>
+</li>
+<li><p>如何理解多进程</p>
+</li>
+<li><p>线程间的通信，线程安全</p>
+</li>
+<li><p>创建线程的方法</p>
+</li>
+<li><p>消息队列</p>
+</li>
+</ol>
+<p> <strong>Linux</strong></p>
+<ol>
+<li>Linux怎么配置路由</li>
+<li>Linux查看进程、杀死进程</li>
+<li>Linux的硬链接和软连接</li>
+<li>怎么查看端口的状态？具体命令</li>
+<li>怎么查看某个进程的状态？</li>
+<li>vim如何进行批量修改</li>
+<li>脚本编写</li>
+<li><font color=red>linux常用命令：ls(ll, ls -h), cat, echo, ps (及其参数), grep, less/more, find, sedssh(scp), screen工具</font></li>
+</ol>
+<h2 id="4-数据结构"><a href="#4-数据结构" class="headerlink" title="4 数据结构"></a>4 数据结构</h2><ol>
+<li><p>如何用两个栈实现一个队列</p>
+</li>
+<li><p>链表与线性表的区别</p>
+</li>
+<li><p>堆和栈的区别</p>
+</li>
+<li><p>map set list的区别</p>
+</li>
+<li><p>红黑树/平衡树</p>
+<p>红黑树知道吗？说说，为啥有了平衡树还需要红黑树？（平衡树太严格，插入很容易打破平衡，经常需要调整，而红黑树是一种折中方案……）</p>
+</li>
+<li><p>对于一个搜索引擎，用户输入一部分关键字，引擎会自动列出你可能想找的，用什么数据结构来存储这个信息最好（数据结构）</p>
+</li>
+<li><p><font color=red>链表</font></p>
+</li>
+</ol>
+<h2 id="5-编程语言-Cpp-Java"><a href="#5-编程语言-Cpp-Java" class="headerlink" title="5 编程语言 Cpp/Java"></a>5 编程语言 Cpp/Java</h2><ol>
+<li>关键字Static作用</li>
+<li>指针函数与函数指针</li>
+<li>多态能否用C语言实现</li>
+<li>那说一下new和malloc的区别（这个我背过，仰天长笑）</li>
+<li>hashmap的实现原理</li>
+<li>引用有哪几种类型</li>
+<li>类和接口</li>
+<li>接口和抽象类的区别</li>
+<li>Hashmap和Hashtable的区别</li>
+<li>静态对象和实例对象的区别</li>
+<li>空指针，野指针（两个指针的区别）</li>
+<li><font color=red>函数指针</font></li>
+</ol>
+<h2 id="6-编程题"><a href="#6-编程题" class="headerlink" title="6 编程题"></a>6 编程题</h2><ol>
+<li><p>原地字符串反转</p>
+</li>
+<li><p>给定一个数，找出数组中和为该数的两个数字</p>
+</li>
+<li><p>一副扑克牌，从中抽取5张牌，判断5张牌是否是顺子（手撕代码）</p>
+</li>
+<li><p>编程题相同字符串中间内容相消，直到字符串中不包含相同字符，如abcad-ad，abcadcdc-adcdc-adc</p>
+</li>
+<li><p>之后让写了一道题，给你一个文本文件，由一行一行单词组成，返回你指定的单词所在的所有行数，</p>
+<p>一个是不能用任何临时变量求strlen，之后写一个指向该函数的指针。</p>
+</li>
+<li><p>用rand6（）求rand10（）</p>
+</li>
+<li><p>两个链表，判断是否相交</p>
+</li>
+<li><p>有序数组找出和为给定数的两个数，用双指针</p>
+</li>
+<li><p>给一个日志文件，写脚本语句进行统计分析</p>
+</li>
+<li><p>n*m的矩形有多少个正方形</p>
+</li>
+<li><p>写一个单例</p>
+</li>
+<li><p>链表的所有操作：插入删除查询 双向链表 反转链表</p>
+</li>
+</ol>
+<p>第一题：字符串的四则<a href="">远算</a>， </p>
+<p>第三题：字符串的<a href="">最长公共子序列</a>，输出长度和内容 </p>
+<p>第二题：给定一个目录，找出该目录下所有文件，包括子目录文件，并按照文件大小从小到大进行<a href="">排序</a>，<a href="">排序</a><a href="">算法</a>自行实现，用你认为最高效的方式？ </p>
+<h2 id="7-数据库"><a href="#7-数据库" class="headerlink" title="7 数据库"></a>7 数据库</h2><ol>
+<li>MySQL修改表的某一列</li>
+<li>设计数据库，教室表，画ER图</li>
+<li>ACID</li>
+<li>事务的隔离级别（重点）</li>
+<li>索引b+树结构</li>
+<li>sql语句优化</li>
+<li>数据库引擎比较（重点）</li>
+<li>数据库怎么保证事务的acid性质</li>
+<li>左外连接和普通连接区别</li>
+<li>delete和trancate的区别</li>
+<li>什么时候全表查询比索引快</li>
+<li>mysql怎么使用，越多越好吗，一张表最多几个索引</li>
+<li>为什么索引能加快查找效率？</li>
+<li>乐观锁</li>
+<li> 手撕sql 一张学生表、成绩表，查所有学生的成绩，成绩倒序排列</li>
+</ol>
+<h2 id="8-基础知识"><a href="#8-基础知识" class="headerlink" title="8 基础知识"></a>8 基础知识</h2><ol>
+<li>排序原理</li>
+<li>有哪些常用的加密算法</li>
+<li>黑盒白盒有哪些方法，条件覆盖和判定覆盖区别是什么</li>
+<li>对这个函数怎么测试，注意上下界，哪个值先溢出</li>
+<li>软件生命周期</li>
+<li>测试框架相关</li>
+<li>白盒测试（判定覆盖、条件覆盖、判定条件覆盖）</li>
+</ol>
+<h2 id="9-智力题"><a href="#9-智力题" class="headerlink" title="9 智力题"></a>9 智力题</h2><ul>
+<li><p>一天24小时，时针和分针会重合几次</p>
+</li>
+<li><p>之后智力题，给你101个金币，1枚坏的或轻或重，给一个没有砝码的天平，称两次，判断出坏的币子是轻还是重。我第一个想到拿出去一个币子然后50 vs50，25 vs 25.后来又让我换一种方法，给了提示33，33，35</p>
+</li>
+<li><p>5L和6L水桶，得到三升水</p>
+</li>
+<li><p>两个一小时蚊香怎么得到15分钟的记时</p>
+</li>
+</ul>
+<h2 id="10-实际场景"><a href="#10-实际场景" class="headerlink" title="10 实际场景"></a>10 实际场景</h2><ul>
+<li>假设现在用qq给对方发送邮件，请根据这个场景设计测试样例，我大概基本上是从图片内容说的，大小，格式，内容是否有违规信息等，其实还应该考虑网络环境，安全等信息。</li>
+<li>App链接点进后加载一段时间仍无内容，分析可能的情况</li>
+<li>关于微信发红包功能进行测试</li>
+<li>在一段时间内，四川用户无法访问百度，试分析原因</li>
+<li>针对摩拜单车扫码到开锁过程，进行测试</li>
+<li>测试牛客网面试界面的聊天框，从哪些方面测试</li>
+<li>设计矿泉水瓶的质量测试用例</li>
+<li>服务突然启动不起来了怎么办</li>
+<li>刷抖音突然卡顿，可能有什么原因？</li>
+</ul>
+<h2 id="11-其他"><a href="#11-其他" class="headerlink" title="11 其他"></a>11 其他</h2><ol>
+<li>项目中遇到最大难题是什么，怎么解决的</li>
+<li>会哪些技术</li>
+<li>介绍下负载均衡</li>
+<li> 你的优缺点</li>
+<li>产品题 最喜欢的APP 描述一下这个产品 竞品分析 产品中最不喜欢的一点 开发者为什么没有改善这一点</li>
+<li>讲一下局部感知和特征提取</li>
+</ol>
+<h2 id="12-反问"><a href="#12-反问" class="headerlink" title="12 反问"></a>12 反问</h2><ul>
+<li>在腾讯技术岗中，后台开发、测试开发、运营开发分别做什么？职业发展路线？</li>
+<li>看网上说实际工作中是否70%要测试，30%要编写脚本自动化测试？</li>
+<li>部门所用的技术栈</li>
+</ul>
+
+  
+  </article>
+
+
+
+
+
+      
+<footer class="page-footer fs12"><hr><div><p>All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</p>
+<p>This site was deployed by <a href="http://yuhanyue.github.io/">@Yuhan</a> using <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.0.1">Stellar</a>.</p>
+</div></footer>
+
+      <div class='float-panel mobile-only' style='display:none'>
+  <button type='button' class='sidebar-toggle mobile' onclick='sidebar.toggle()'>
+    <svg class="icon" viewBox="0 0 1228 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2849"><path d="M0 0m97.390199 0l973.901995 0q97.390199 0 97.390199 97.390199l0 0q0 97.390199-97.390199 97.3902l-973.901995 0q-97.390199 0-97.390199-97.3902l0 0q0-97.390199 97.390199-97.390199Z" p-id="2850"></path><path d="M0 389.560798m97.390199 0l973.901995 0q97.390199 0 97.390199 97.390199l0 0q0 97.390199-97.390199 97.3902l-973.901995 0q-97.390199 0-97.390199-97.3902l0 0q0-97.390199 97.390199-97.390199Z" p-id="2851"></path><path d="M0 779.121596m97.390199 0l973.901995 0q97.390199 0 97.390199 97.390199l0 0q0 97.390199-97.390199 97.390199l-973.901995 0q-97.390199 0-97.390199-97.390199l0 0q0-97.390199 97.390199-97.390199Z" p-id="2852"></path></svg>
+  </button>
+</div>
+
+    </div>
+  </div>
+  <div class='scripts'>
+    <script type="text/javascript">
+  stellar = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    loadCSS: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    // 从 butterfly 和 volantis 获得灵感
+    loadScript: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script')
+      script.src = src
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    // https://github.com/jerryc127/hexo-theme-butterfly
+    jQuery: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        stellar.loadScript(stellar.plugins.jQuery).then(fn)
+      } else {
+        fn()
+      }
+    }
+  };
+  stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.0.1';
+  stellar.config = {
+    date_suffix: {
+      just: 'Just',
+      min: 'minutes ago',
+      hour: 'hours ago',
+      day: 'days ago',
+      month: 'months ago',
+    },
+  };
+
+  // required plugins (only load if needs)
+  stellar.plugins = {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js',
+    sitesjs: '/js/plugins/sites.js',
+    friendsjs: '/js/plugins/friends.js',
+  };
+
+  // optional plugins
+  if ('true' == 'true') {
+    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js","transition":"blur"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper/swiper-bundle.min.css","js":"https://unpkg.com/swiper/swiper-bundle.min.js"});
+  }
+  if ('' == 'true') {
+    stellar.plugins.scrollreveal = Object.assign({"enable":null,"js":"https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
+  }
+</script>
+
+<!-- required -->
+
+  
+<script src="/js/main.js" async></script>
+
+
+
+<!-- optional -->
+
+
+
+<!-- inject -->
+
+
+  </div>
+</body>
+</html>

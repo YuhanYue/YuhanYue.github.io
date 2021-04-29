@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta name="generator" content="Hexo 5.4.0">
+  <meta charset="utf-8">
+  
+
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <title>page - Yuhan's Blog</title>
+
+  
+    <meta name="description" content="操作系统 进程和线程 进程同步问题   进程同步问题进程的同步是目的，而进程间通信是实现进程同步的手段。 生产者-消费者问题问题描述：使用一个缓冲区来存放数据，只有缓冲区没有满，生产者才可以写入数据；只有缓冲区不为空，消费者才可以读出数据 1234567891011121314151617181920212223semaphore full &#x3D; 0, &#x2F;&#x2F;缓冲区已有的数量empty &#x3D; n, mu">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Yuhan&#39;s Blog">
+<meta property="og:url" content="http://yuhanyue.github.io/notes/Interview/Interview/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.html">
+<meta property="og:site_name" content="Yuhan&#39;s Blog">
+<meta property="og:description" content="操作系统 进程和线程 进程同步问题   进程同步问题进程的同步是目的，而进程间通信是实现进程同步的手段。 生产者-消费者问题问题描述：使用一个缓冲区来存放数据，只有缓冲区没有满，生产者才可以写入数据；只有缓冲区不为空，消费者才可以读出数据 1234567891011121314151617181920212223semaphore full &#x3D; 0, &#x2F;&#x2F;缓冲区已有的数量empty &#x3D; n, mu">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://github.com/wolverinn/Waking-Up/raw/master/_v_images/20191202090217863_1873.png">
+<meta property="article:published_time" content="2021-04-24T16:23:17.573Z">
+<meta property="article:modified_time" content="2021-04-22T12:47:03.155Z">
+<meta property="article:author" content="Yuhan">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/wolverinn/Waking-Up/raw/master/_v_images/20191202090217863_1873.png">
+  
+  
+
+  <!-- feed -->
+  
+
+  
+    
+<link rel="stylesheet" href="/css/main.css">
+
+  
+
+  
+</head>
+
+<body theme='light'>
+  
+
+
+  <div class='l_body' id='start'>
+    <aside class='l_left'>
+    
+
+<header class='header'>
+  <div class='logo-wrap'>
+  
+    <a class='avatar' target="_blank" rel="noopener" href='https://pbs.twimg.com/media/EnfJgj9VcAITqVx?format=jpg&name=4096x4096'><img no-lazy src='https://pbs.twimg.com/media/EnfJgj9VcAITqVx?format=jpg&name=4096x4096'/></a>
+  
+  
+    <a class='title' href='/Overainy%F0%9F%90%88'>Overainy🐈</a>
+  
+</div>
+
+  <nav class="menu dis-select"><a class="nav-item" href="/">主页</a><a class="nav-item" href="/notes">笔记</a><a class="nav-item" href="/friends/">友链</a><a class="nav-item" href="/about/">关于</a></nav>
+</header>
+
+<div class='widgets'>
+  
+    
+      
+      <div class='widget-wrap' id='markdown'>
+  <div class='widget-header h4 dis-select'>
+    <span class='name'>Welcome！</span>
+  </div>
+  <div class='widget-body fs14'>
+    
+      <p>Welcome to Yuhan Blog 🎉！</p>
+
+    
+  </div>
+</div>
+
+    
+  
+    
+      
+      
+<div class="widget-wrap" id="recent"><div class="widget-header h4 dis-select"><span class="name">Recent Update</span></div><div class="widget-body fs14"><div class="post-title reveal"><div class="cap"><time>2021-04-10</time></div><a href="/2021/04/03/hexo+github%20page/">📖如何使用hexo + github page配置个人博客</a></div></div></div>
+
+    
+  
+</div>
+
+
+    </aside>
+    <div class='l_main'>
+      
+  
+<header class='header mobile-only'>
+  <div class='logo-wrap'>
+  
+    <a class='avatar' target="_blank" rel="noopener" href='https://pbs.twimg.com/media/EnfJgj9VcAITqVx?format=jpg&name=4096x4096'><img no-lazy src='https://pbs.twimg.com/media/EnfJgj9VcAITqVx?format=jpg&name=4096x4096'/></a>
+  
+  
+    <a class='title' href='/Overainy%F0%9F%90%88'>Overainy🐈</a>
+  
+</div>
+
+  <nav class="menu dis-select"><a class="nav-item" href="/">主页</a><a class="nav-item" href="/notes">笔记</a><a class="nav-item" href="/friends/">友链</a><a class="nav-item" href="/about/">关于</a></nav>
+</header>
+
+
+
+      
+
+  
+  <div class='bread-nav fs12'>
+  
+      <div id='breadcrumb'>
+        <a class='cap breadcrumb' href='/'>Home</a>
+        <span class="sep"></span>
+        <a class='cap breadcrumb' href='/notes/Interview/Interview/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.html'></a>
+      </div>
+  
+  </div>
+
+
+  <article class='content md page'>
+  
+  
+    <h3 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h3><ul>
+<li><p>进程和线程</p>
+<p><a href="">进程同步问题</a></p>
+</li>
+</ul>
+<h4 id="进程同步问题"><a href="#进程同步问题" class="headerlink" title="进程同步问题"></a>进程同步问题</h4><p>进程的同步是目的，而进程间通信是实现进程同步的手段。</p>
+<h5 id="生产者-消费者问题"><a href="#生产者-消费者问题" class="headerlink" title="生产者-消费者问题"></a>生产者-消费者问题</h5><p>问题描述：使用一个缓冲区来存放数据，只有缓冲区没有满，生产者才可以写入数据；只有缓冲区不为空，消费者才可以读出数据</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">semaphore full = <span class="number">0</span>, <span class="comment">//缓冲区已有的数量</span></span><br><span class="line">empty = n, mutex = <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//生产者进程</span></span><br><span class="line"><span class="keyword">void</span> producer()&#123;</span><br><span class="line">		<span class="keyword">do</span>&#123;</span><br><span class="line">			P(empty);<span class="comment">//检查是否有空，有的话生产坑--</span></span><br><span class="line">			P(mutex);</span><br><span class="line">			</span><br><span class="line">			V(mutex);</span><br><span class="line">			V(full);<span class="comment">//full++</span></span><br><span class="line">		&#125;<span class="keyword">while</span>(<span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">consumer</span><span class="params">()</span></span>&#123;</span><br><span class="line">  	<span class="keyword">do</span>&#123;</span><br><span class="line">      P(full);</span><br><span class="line">      P(mutex);</span><br><span class="line">      </span><br><span class="line">      V(mutex);</span><br><span class="line">      V(empty);</span><br><span class="line">    &#125;<span class="keyword">while</span>(<span class="number">1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="哲学家就餐问题"><a href="#哲学家就餐问题" class="headerlink" title="哲学家就餐问题"></a>哲学家就餐问题</h5><h5 id="读者-写者问题"><a href="#读者-写者问题" class="headerlink" title="读者-写者问题"></a>读者-写者问题</h5><h4 id="临界区的概念"><a href="#临界区的概念" class="headerlink" title="临界区的概念"></a>临界区的概念</h4><p>各个进程中对临界资源（互斥资源、共享变量，一次只能给一个进程使用）进行操作的程序片段。</p>
+<h4 id="同步和互斥"><a href="#同步和互斥" class="headerlink" title="同步和互斥"></a>同步和互斥</h4><p>同步：多个进程因为合作而使得进程的<strong>执行有一定的先后顺序</strong>。比如某个进程需要另一个进程提供的消息，获得消息之前进入阻塞态；</p>
+<p>互斥：多个进程在同一时刻只有一个进程能进入临界区。没有先后顺序。</p>
+<h4 id="并发、并行、异步"><a href="#并发、并行、异步" class="headerlink" title="并发、并行、异步"></a>并发、并行、异步</h4><p>并发:在一个时间段中同时有多个程序在运行,但其实任一时刻,只有一个程序在CPU上运行，宏观上的并发是通过不断的切换实现的。</p>
+<p>多线程：并发运行的一段代码。是实现异步的手段。</p>
+<p>并行（和串行相比）：在多CPU系统中，多个程序无论宏观还是微观上都是同时执行的。</p>
+<p>异步（和同步相比）：同步是顺序执行，异步是在等待某个资源的时候继续做自己的事。</p>
+<h4 id="进程状态转换"><a href="#进程状态转换" class="headerlink" title="进程状态转换"></a>进程状态转换</h4><p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://github.com/wolverinn/Waking-Up/raw/master/_v_images/20191202090217863_1873.png" alt="Process State"></p>
+<ul>
+<li>就绪状态：进程已获得除处理机以外的所需资源，等待分配处理机资源</li>
+<li>运行状态：占用处理机资源运行，处于此状态的进程数小于等于CPU数</li>
+<li>阻塞状态： 进程等待某种条件，在条件满足之前无法执行</li>
+</ul>
+<h4 id="进程调度策略"><a href="#进程调度策略" class="headerlink" title="进程调度策略"></a>进程调度策略</h4><h5 id="批处理系统"><a href="#批处理系统" class="headerlink" title="批处理系统"></a>批处理系统</h5><p>批处理是指用户将一批作业提交给操作系统后就不再干预，由操作系统控制它们自动运行。</p>
+<ul>
+<li><p>先来先服务 FCFS</p>
+</li>
+<li><p>最短作业优先 SJF</p>
+</li>
+<li><p>最短剩余时间优先 SRTN</p>
+</li>
+<li><p>最高响应比优先 HRRN</p>
+</li>
+</ul>
+<h5 id="交互式系统"><a href="#交互式系统" class="headerlink" title="交互式系统"></a>交互式系统</h5><p>交互式计算机系统与操作人员以人机对话的方式一问一答，直至获得最后处理结果。采用这种方式，程序设计人员可以边设计，边调整，边修改，使错误和不足之处及时得到改正和补充。</p>
+<ul>
+<li>时间片轮转 Round Robin</li>
+<li>优先级调度算法</li>
+<li>多级反馈队列调度算法</li>
+</ul>
+<h4 id="僵尸进程-🧟‍♀️"><a href="#僵尸进程-🧟‍♀️" class="headerlink" title="僵尸进程 🧟‍♀️"></a>僵尸进程 🧟‍♀️</h4><p>一个子进程结束后，它的父进程并没有等待它（调用wait或者waitpid），那么这个子进程将成为一个僵尸进程。僵尸进程是一个已经死亡的进程，但是并没有真正被销毁。它已经放弃了几乎所有内存空间，没有任何可执行代码，也不能被调度，仅仅在进程表中保留一个位置，记载该进程的进程ID、终止状态以及资源利用信息(CPU时间，内存使用量等等)供父进程收集，除此之外，僵尸进程不再占有任何内存空间。这个僵尸进程可能会一直留在系统中直到系统重启</p>
+<p>危害：占用进程号，而系统所能使用的进程号是有限的；占用内存。</p>
+<h4 id="线程同步"><a href="#线程同步" class="headerlink" title="线程同步"></a>线程同步</h4><ul>
+<li>互斥量 Mutex</li>
+<li>信号量 Semaphore 信号量对象保存了<strong>最大资源计数</strong>和<strong>当前可用资源计数</strong></li>
+<li>事件 Event</li>
+<li>临界区 Critical Section</li>
+</ul>
+<p>互斥量和临界区的区别： 互斥量是可以命名的，可以用于不同进程之间的同步；而临界区只能用于同一进程中线程的同步。创建互斥量需要的资源更多，因此临界区的优势是速度快，节省资源</p>
+<h4 id="什么是协程？"><a href="#什么是协程？" class="headerlink" title="什么是协程？"></a>什么是协程？</h4><p>协程是一种用户态的轻量级线程，协程的调度完全由用户控制。协程拥有自己的寄存器上下文和栈。协程调度切换时，将寄存器上下文和栈保存到其他地方，在切回来的时候，恢复先前保存的寄存器上下文和栈，直接操作栈则基本没有内核切换的开销，可以不加锁的访问全局变量，所以上下文的切换非常快。</p>
+<h4 id="进程的异常控制"><a href="#进程的异常控制" class="headerlink" title="进程的异常控制"></a>进程的异常控制</h4><ul>
+<li>陷阱</li>
+<li>中断</li>
+<li>异常</li>
+<li>信号</li>
+</ul>
+<h4 id="IO多路复用"><a href="#IO多路复用" class="headerlink" title="IO多路复用"></a>IO多路复用</h4><h4 id="用户态-内核态"><a href="#用户态-内核态" class="headerlink" title="用户态/内核态"></a>用户态/内核态</h4><h4 id="死锁"><a href="#死锁" class="headerlink" title="死锁"></a>死锁</h4><p><strong>死锁产生的必要条件</strong></p>
+<p><strong>死锁处理方法</strong></p>
+<h4 id="分页-分段"><a href="#分页-分段" class="headerlink" title="分页/分段"></a>分页/分段</h4><h4 id="虚拟内存"><a href="#虚拟内存" class="headerlink" title="虚拟内存"></a>虚拟内存</h4><h4 id="页面置换算法"><a href="#页面置换算法" class="headerlink" title="页面置换算法"></a>页面置换算法</h4>
+  
+  </article>
+
+
+
+
+
+      
+<footer class="page-footer fs12"><hr><div><p>All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</p>
+<p>This site was deployed by <a href="http://yuhanyue.github.io/">@Yuhan</a> using <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.0.1">Stellar</a>.</p>
+</div></footer>
+
+      <div class='float-panel mobile-only' style='display:none'>
+  <button type='button' class='sidebar-toggle mobile' onclick='sidebar.toggle()'>
+    <svg class="icon" viewBox="0 0 1228 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2849"><path d="M0 0m97.390199 0l973.901995 0q97.390199 0 97.390199 97.390199l0 0q0 97.390199-97.390199 97.3902l-973.901995 0q-97.390199 0-97.390199-97.3902l0 0q0-97.390199 97.390199-97.390199Z" p-id="2850"></path><path d="M0 389.560798m97.390199 0l973.901995 0q97.390199 0 97.390199 97.390199l0 0q0 97.390199-97.390199 97.3902l-973.901995 0q-97.390199 0-97.390199-97.3902l0 0q0-97.390199 97.390199-97.390199Z" p-id="2851"></path><path d="M0 779.121596m97.390199 0l973.901995 0q97.390199 0 97.390199 97.390199l0 0q0 97.390199-97.390199 97.390199l-973.901995 0q-97.390199 0-97.390199-97.390199l0 0q0-97.390199 97.390199-97.390199Z" p-id="2852"></path></svg>
+  </button>
+</div>
+
+    </div>
+  </div>
+  <div class='scripts'>
+    <script type="text/javascript">
+  stellar = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    loadCSS: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    // 从 butterfly 和 volantis 获得灵感
+    loadScript: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script')
+      script.src = src
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    // https://github.com/jerryc127/hexo-theme-butterfly
+    jQuery: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        stellar.loadScript(stellar.plugins.jQuery).then(fn)
+      } else {
+        fn()
+      }
+    }
+  };
+  stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.0.1';
+  stellar.config = {
+    date_suffix: {
+      just: 'Just',
+      min: 'minutes ago',
+      hour: 'hours ago',
+      day: 'days ago',
+      month: 'months ago',
+    },
+  };
+
+  // required plugins (only load if needs)
+  stellar.plugins = {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js',
+    sitesjs: '/js/plugins/sites.js',
+    friendsjs: '/js/plugins/friends.js',
+  };
+
+  // optional plugins
+  if ('true' == 'true') {
+    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js","transition":"blur"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper/swiper-bundle.min.css","js":"https://unpkg.com/swiper/swiper-bundle.min.js"});
+  }
+  if ('' == 'true') {
+    stellar.plugins.scrollreveal = Object.assign({"enable":null,"js":"https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
+  }
+</script>
+
+<!-- required -->
+
+  
+<script src="/js/main.js" async></script>
+
+
+
+<!-- optional -->
+
+
+
+<!-- inject -->
+
+
+  </div>
+</body>
+</html>
