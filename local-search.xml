@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>🇨🇦master顺读签证准备过程记录 + timeline</title>
+    <link href="/2021/04/03/Canada%20study%20permit/"/>
+    <url>/2021/04/03/Canada%20study%20permit/</url>
+    
+    <content type="html"><![CDATA[<p>记录下签证需要准备的东西~</p><span id="more"></span><p>[toc]</p><h1 id="1-Timeline"><a href="#1-Timeline" class="headerlink" title="1 Timeline"></a>1 Timeline</h1><p>已预体检+5.13提交 - </p><h1 id="2-Biometric"><a href="#2-Biometric" class="headerlink" title="2 Biometric"></a>2 Biometric</h1><p><a href="https://www.vfsglobal.ca/IRCC-AppointmentWave1/Account/RegisteredLogin?q=shSA0YnE4pLF9Xzwon/x/CQ1P0LBKn66dLdNUfueK+z6PKDIRlw2IQmnt5xZX+FoGSQVbs4mLmEQY7QQixHbOA==">预约生物信息采集网址</a></p><p><a href="https://assets.ctfassets.net/xxg4p8gt3sg6/5K1M5P1ErRAQBc5m8JkD99/a88e38476e0177d0e14e0970989f68d6/China-Consent-Form-ZH.pdf">签证中心服务同意书</a></p><p>注册账号，成功后<strong>登陆时输入的验证码全为大写</strong>（小写会报错）</p><img src="/Users/overainy/Library/Application Support/typora-user-images/Screen Shot 2021-05-16 at 5.12.01 PM.png" alt="Screen Shot 2021-05-16 at 5.12.01 PM" style="zoom:50%;" /><p>填资料- 选时间-下载预约信，需要带的东西：</p><img src="/Users/overainy/Library/Application Support/typora-user-images/Screen Shot 2021-05-16 at 5.16.03 PM.png" alt="Screen Shot 2021-05-16 at 5.16.03 PM" style="zoom:30%;" /><p>⚠️：reschedule预约时只能更改时间，不能更换使馆地点（例如从南京换到上海</p><h1 id="3-材料准备"><a href="#3-材料准备" class="headerlink" title="3 材料准备"></a>3 材料准备</h1><p><strong>注册eapp账号时:</strong></p><ul><li><p>have you visited or lived in any one of the designated countries for 6 consecutive months in the last year? No -&gt; Yes!! 填yes后需要才会要求体检</p></li><li><p>注意要申请的是study permit，不是extend(续签)</p></li><li><p>如果要申请work permit， Is work an essential part of your study 选Yes!</p></li></ul><h2 id="1-client-info👤"><a href="#1-client-info👤" class="headerlink" title="1 client info👤"></a>1 client info👤</h2><ul><li><p>出生证明</p></li><li><p>Study Plan</p></li><li><ul><li>Why ca/neu</li><li>毕业计划回国</li><li>study plan </li><li>个人bg</li></ul></li><li><p>预体检回执</p></li><li><p>语言成绩单</p></li><li><p>成绩单</p></li><li><p>在读证明</p></li><li><p>身份证 + 翻译</p></li><li><p>亲属关系公证 -&gt;户口本 +翻译</p></li></ul><h2 id="2-financial-support💰"><a href="#2-financial-support💰" class="headerlink" title="2 financial support💰"></a>2 financial support💰</h2><ul><li>资金来源说明书 </li><li>存款证明 有中英文版本</li><li>银行流水 不需要翻译，用红框标出了工资</li><li>在职证明 中英翻译</li><li>房地产证书</li></ul><h2 id="3-forms"><a href="#3-forms" class="headerlink" title="3 forms"></a>3 forms</h2><ul><li>0104</li><li>1294<ul><li>时间写了2021.9 - 2023.6</li><li>资金写了95,000 CAD</li></ul></li><li>5257</li><li>5645</li></ul><h1 id="4-体检"><a href="#4-体检" class="headerlink" title="4 体检"></a>4 体检</h1><p>💰费用：1700 + 235（有纹身/耳洞加测）</p><p>地点：上海市闸北中心医院</p><p>流程：门口拍照 -&gt; 交护照复印件、护照、填表 -&gt; 换衣服准备体检</p><p>体检项目：尿检/常规（身高体重、视力、血压）/抽血/胸片/医生问诊（按压腹部检查等等</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>加拿大学签</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Visa</tag>
+      
+      <tag>Canada</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>📖如何使用hexo + github page配置个人博客</title>
+    <link href="/2021/04/03/hexo+github%20page/"/>
+    <url>/2021/04/03/hexo+github%20page/</url>
+    
+    <content type="html"><![CDATA[<p>敲里吗，搞了半天，也太麻烦了</p><span id="more"></span><p>[toc]</p><h2 id="1-Github-Page"><a href="#1-Github-Page" class="headerlink" title="1 Github Page"></a>1 Github Page</h2><p>新建一个repository，命名为<u>[username].github.io</u>（强制！）</p><h2 id="2-Hexo安装"><a href="#2-Hexo安装" class="headerlink" title="2 Hexo安装"></a>2 Hexo安装</h2><p><a href="">hexo官方文档</a> <a href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a>)</p><p>根据文档安装hexo</p><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 <a href="http://daringfireball.net/projects/markdown/">Markdown</a>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>安装 Hexo 只需几分钟时间，若您在安装过程中遇到问题或无法找到解决方式，请<a href="https://github.com/hexojs/hexo/issues">提交问题</a>，我们会尽力解决您的问题。</p><h3 id="安装前提"><a href="#安装前提" class="headerlink" title="安装前提"></a>安装前提</h3><p>安装 Hexo 相当简单，只需要先安装下列应用程序即可：</p><ul><li><a href="http://nodejs.org/">Node.js</a> (Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本)</li><li><a href="http://git-scm.com/">Git</a></li></ul><p>如果您的电脑中已经安装上述必备程序，那么恭喜您！你可以直接前往 <a href="https://hexo.io/zh-cn/docs/#%E5%AE%89%E8%A3%85-Hexo">安装 Hexo</a> 步骤。</p><p>如果您的电脑中尚未安装所需要的程序，请根据以下安装指示完成安装。</p><h3 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h3><ul><li>Windows：下载并安装 <a href="https://git-scm.com/download/win">git</a>.</li><li>Mac：使用 <a href="http://mxcl.github.com/homebrew/">Homebrew</a>, <a href="http://www.macports.org/">MacPorts</a> 或者下载 <a href="http://sourceforge.net/projects/git-osx-installer/">安装程序</a>。</li><li>Linux (Ubuntu, Debian)：<code>sudo apt-get install git-core</code></li><li>Linux (Fedora, Red Hat, CentOS)：<code>sudo yum install git-core</code></li></ul><blockquote><p>Mac 用户</p><p>如果在编译时可能会遇到问题，请先到 App Store 安装 Xcode，Xcode 完成后，启动并进入 <strong>Preferences -&gt; Download -&gt; Command Line Tools -&gt; Install</strong> 安装命令行工具。</p></blockquote><blockquote><p>Windows 用户</p><p>对于中国大陆地区用户，可以前往 <a href="https://npm.taobao.org/mirrors/git-for-windows/">淘宝 Git for Windows 镜像</a> 下载 git 安装包。</p></blockquote><h3 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h3><p>Node.js 为大多数平台提供了官方的 <a href="https://nodejs.org/en/download/">安装程序</a>。对于中国大陆地区用户，可以前往 <a href="https://npm.taobao.org/mirrors/node">淘宝 Node.js 镜像</a> 下载。</p><p>其它的安装方法：</p><ul><li>Windows：通过 <a href="https://github.com/jasongin/nvs/">nvs</a>（推荐）或者<a href="https://github.com/nvm-sh/nvm">nvm</a> 安装。</li><li>Mac：使用 <a href="https://brew.sh/">Homebrew</a> 或 <a href="http://www.macports.org/">MacPorts</a> 安装。</li><li>Linux（DEB/RPM-based）：从 <a href="https://github.com/nodesource/distributions">NodeSource</a> 安装。</li><li>其它：使用相应的软件包管理器进行安装，可以参考由 Node.js 提供的 <a href="https://nodejs.org/en/download/package-manager/">指导</a></li></ul><p>对于 Mac 和 Linux 同样建议使用 nvs 或者 nvm，以避免可能会出现的权限问题。</p><blockquote><p>Windows 用户</p><p>使用 Node.js 官方安装程序时，请确保勾选 <strong>Add to PATH</strong> 选项（默认已勾选）</p></blockquote><blockquote><p>For Mac / Linux 用户</p><p>如果在尝试安装 Hexo 的过程中出现 <code>EACCES</code> 权限错误，请遵循 <a href="https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally">由 npmjs 发布的指导</a> 修复该问题。强烈建议 <strong>不要</strong> 使用 root、sudo 等方法覆盖权限</p></blockquote><blockquote><p>Linux</p><p>If you installed Node.js using Snap, you may need to manually run <code>npm install</code> in the target folder when <a href="https://hexo.io/docs/commands#init">initializing</a> a blog.</p></blockquote><h3 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h3><p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。</p><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs avrasm">$ npm install -g hexo-<span class="hljs-keyword">cli</span><br></code></pre></td></tr></table></figure><h3 id="进阶安装和使用"><a href="#进阶安装和使用" class="headerlink" title="进阶安装和使用"></a>进阶安装和使用</h3><p>对于熟悉 npm 的进阶用户，可以仅局部安装 <code>hexo</code> 包。</p><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmake">$ npm <span class="hljs-keyword">install</span> hexo<br></code></pre></td></tr></table></figure><p>安装以后，可以使用以下两种方式执行 Hexo：</p><ol><li><p><code>npx hexo &lt;command&gt;</code></p></li><li><p>将 Hexo 所在的目录下的 <code>node_modules</code> 添加到环境变量之中即可直接使用 <code>hexo &lt;command&gt;</code>：</p><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs dos"><span class="hljs-built_in">echo</span> &#x27;<span class="hljs-built_in">PATH</span>=&quot;$<span class="hljs-built_in">PATH</span>:./node_modules/.bin&quot;&#x27; &gt;&gt; ~/.profile<br></code></pre></td></tr></table></figure></li></ol><h3 id="Node-js-版本限制"><a href="#Node-js-版本限制" class="headerlink" title="Node.js 版本限制"></a>Node.js 版本限制</h3><p>我们强烈建议永远安装最新版本的 Hexo，以及 <a href="https://hexo.io/zh-cn/docs/#%E5%AE%89%E8%A3%85%E5%89%8D%E6%8F%90">推荐的 Node.js 版本</a>。</p><table><thead><tr><th align="left">Hexo 版本</th><th align="left">最低兼容 Node.js 版本</th></tr></thead><tbody><tr><td align="left">5.0+</td><td align="left">10.13.0</td></tr><tr><td align="left">4.1 - 4.2</td><td align="left">8.10</td></tr><tr><td align="left">4.0</td><td align="left">8.6</td></tr><tr><td align="left">3.3 - 3.9</td><td align="left">6.9</td></tr><tr><td align="left">3.2 - 3.3</td><td align="left">0.12</td></tr><tr><td align="left">3.0 - 3.1</td><td align="left">0.10 or iojs</td></tr><tr><td align="left">0.0.1 - 2.8</td><td align="left">0.10</td></tr></tbody></table><h2 id="3-部署-❗️（重点）"><a href="#3-部署-❗️（重点）" class="headerlink" title="3 部署 ❗️（重点）"></a>3 部署 ❗️（重点）</h2><p>在本地任意一个位置新建博客文件夹📁</p><p>例如：<u>/Users/overainy/Documents/Computer Science/Blog</u></p><p>在此文件夹中进行hexo initial</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta">$</span><span class="bash"> <span class="hljs-built_in">cd</span> /Users/overainy/Documents/Computer Science/Blog</span><br><span class="hljs-meta">$</span><span class="bash"> hexo init</span><br><br></code></pre></td></tr></table></figure><p>hexo会自动在文件夹中创建所需文件。</p><p>之后需要安装主题，可选择</p><ul><li>下载theme包放入Blog对应的文件夹中，并更改<code>_config.yml</code>文件中theme对应参数；</li><li>我使用的<code>stellar</code>主题可以使用npm一键进行安装，会被安装在<code>Blog/node_modules/hexo-theme-stellar</code>中，可在此文件夹中修改参数。</li></ul><p>修改<code>_config.yml</code>    中deploy的参数，包括github中io repository的地址等。（待完善）</p><p>最后执行:</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta">$</span><span class="bash"> hexo clean</span><br><span class="hljs-meta">$</span><span class="bash"> hexo g</span><br><span class="hljs-meta">$</span><span class="bash">hexo d</span><br></code></pre></td></tr></table></figure><p>等待一分钟后进入<u>[username].github.io</u>查看。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>基础学习</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Blog</tag>
+      
+      <tag>Github Page</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
