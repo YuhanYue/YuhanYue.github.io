@@ -4,33 +4,6 @@
   
   
   <entry>
-    <title>🇨🇦master顺读签证准备过程记录 + timeline</title>
-    <link href="/2021/04/03/Canada%20study%20permit/"/>
-    <url>/2021/04/03/Canada%20study%20permit/</url>
-    
-    <content type="html"><![CDATA[<p>记录下签证需要准备的东西~</p><span id="more"></span><p>[toc]</p><h1 id="1-Timeline"><a href="#1-Timeline" class="headerlink" title="1 Timeline"></a>1 Timeline</h1><p>已预体检+5.13提交 - </p><h1 id="2-Biometric"><a href="#2-Biometric" class="headerlink" title="2 Biometric"></a>2 Biometric</h1><p><a href="https://www.vfsglobal.ca/IRCC-AppointmentWave1/Account/RegisteredLogin?q=shSA0YnE4pLF9Xzwon/x/CQ1P0LBKn66dLdNUfueK+z6PKDIRlw2IQmnt5xZX+FoGSQVbs4mLmEQY7QQixHbOA==">预约生物信息采集网址</a></p><p><a href="https://assets.ctfassets.net/xxg4p8gt3sg6/5K1M5P1ErRAQBc5m8JkD99/a88e38476e0177d0e14e0970989f68d6/China-Consent-Form-ZH.pdf">签证中心服务同意书</a></p><p>注册账号，成功后<strong>登陆时输入的验证码全为大写</strong>（小写会报错）</p><img src="/Users/overainy/Library/Application Support/typora-user-images/Screen Shot 2021-05-16 at 5.12.01 PM.png" alt="Screen Shot 2021-05-16 at 5.12.01 PM" style="zoom:50%;" /><p>填资料- 选时间-下载预约信，需要带的东西：</p><img src="/Users/overainy/Library/Application Support/typora-user-images/Screen Shot 2021-05-16 at 5.16.03 PM.png" alt="Screen Shot 2021-05-16 at 5.16.03 PM" style="zoom:30%;" /><p>⚠️：reschedule预约时只能更改时间，不能更换使馆地点（例如从南京换到上海</p><h1 id="3-材料准备"><a href="#3-材料准备" class="headerlink" title="3 材料准备"></a>3 材料准备</h1><p><strong>注册eapp账号时:</strong></p><ul><li><p>have you visited or lived in any one of the designated countries for 6 consecutive months in the last year? No -&gt; Yes!! 填yes后需要才会要求体检</p></li><li><p>注意要申请的是study permit，不是extend(续签)</p></li><li><p>如果要申请work permit， Is work an essential part of your study 选Yes!</p></li></ul><h2 id="1-client-info👤"><a href="#1-client-info👤" class="headerlink" title="1 client info👤"></a>1 client info👤</h2><ul><li><p>出生证明</p></li><li><p>Study Plan</p></li><li><ul><li>Why ca/neu</li><li>毕业计划回国</li><li>study plan </li><li>个人bg</li></ul></li><li><p>预体检回执</p></li><li><p>语言成绩单</p></li><li><p>成绩单</p></li><li><p>在读证明</p></li><li><p>身份证 + 翻译</p></li><li><p>亲属关系公证 -&gt;户口本 +翻译</p></li></ul><h2 id="2-financial-support💰"><a href="#2-financial-support💰" class="headerlink" title="2 financial support💰"></a>2 financial support💰</h2><ul><li>资金来源说明书 </li><li>存款证明 有中英文版本</li><li>银行流水 不需要翻译，用红框标出了工资</li><li>在职证明 中英翻译</li><li>房地产证书</li></ul><h2 id="3-forms"><a href="#3-forms" class="headerlink" title="3 forms"></a>3 forms</h2><ul><li>0104</li><li>1294<ul><li>时间写了2021.9 - 2023.6</li><li>资金写了95,000 CAD</li></ul></li><li>5257</li><li>5645</li></ul><h1 id="4-体检"><a href="#4-体检" class="headerlink" title="4 体检"></a>4 体检</h1><p>💰费用：1700 + 235（有纹身/耳洞加测）</p><p>地点：上海市闸北中心医院</p><p>流程：门口拍照 -&gt; 交护照复印件、护照、填表 -&gt; 换衣服准备体检</p><p>体检项目：尿检/常规（身高体重、视力、血压）/抽血/胸片/医生问诊（按压腹部检查等等</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>加拿大学签</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Visa</tag>
-      
-      <tag>Canada</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>📖如何使用hexo + github page配置个人博客</title>
     <link href="/2021/04/03/hexo+github%20page/"/>
     <url>/2021/04/03/hexo+github%20page/</url>
@@ -62,7 +35,7 @@
     <link href="/2021/04/03/intelliJ%20import/"/>
     <url>/2021/04/03/intelliJ%20import/</url>
     
-    <content type="html"><![CDATA[<p>解决方案</p><span id="more"></span><p>![image](./intelliJ import/Screen Shot 2021-10-22 at 11.34.59 AM.png)</p>]]></content>
+    <content type="html"><![CDATA[<p>解决方案</p><span id="more"></span><p><img src="../img/intelliJ.png"></p>]]></content>
     
     
     <categories>
@@ -77,6 +50,33 @@
       <tag>Study</tag>
       
       <tag>Java</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>🇨🇦master顺读签证准备过程记录 + timeline</title>
+    <link href="/2021/04/03/Canada%20study%20permit/"/>
+    <url>/2021/04/03/Canada%20study%20permit/</url>
+    
+    <content type="html"><![CDATA[<p>记录下签证需要准备的东西~</p><span id="more"></span><p>[toc]</p><h1 id="1-Timeline"><a href="#1-Timeline" class="headerlink" title="1 Timeline"></a>1 Timeline</h1><p>已预体检+5.13提交 - </p><h1 id="2-Biometric"><a href="#2-Biometric" class="headerlink" title="2 Biometric"></a>2 Biometric</h1><p><a href="https://www.vfsglobal.ca/IRCC-AppointmentWave1/Account/RegisteredLogin?q=shSA0YnE4pLF9Xzwon/x/CQ1P0LBKn66dLdNUfueK+z6PKDIRlw2IQmnt5xZX+FoGSQVbs4mLmEQY7QQixHbOA==">预约生物信息采集网址</a></p><p><a href="https://assets.ctfassets.net/xxg4p8gt3sg6/5K1M5P1ErRAQBc5m8JkD99/a88e38476e0177d0e14e0970989f68d6/China-Consent-Form-ZH.pdf">签证中心服务同意书</a></p><p>注册账号，成功后<strong>登陆时输入的验证码全为大写</strong>（小写会报错）</p><img src="/Users/overainy/Library/Application Support/typora-user-images/Screen Shot 2021-05-16 at 5.12.01 PM.png" alt="Screen Shot 2021-05-16 at 5.12.01 PM" style="zoom:50%;" /><p>填资料- 选时间-下载预约信，需要带的东西：</p><img src="/Users/overainy/Library/Application Support/typora-user-images/Screen Shot 2021-05-16 at 5.16.03 PM.png" alt="Screen Shot 2021-05-16 at 5.16.03 PM" style="zoom:30%;" /><p>⚠️：reschedule预约时只能更改时间，不能更换使馆地点（例如从南京换到上海</p><h1 id="3-材料准备"><a href="#3-材料准备" class="headerlink" title="3 材料准备"></a>3 材料准备</h1><p><strong>注册eapp账号时:</strong></p><ul><li><p>have you visited or lived in any one of the designated countries for 6 consecutive months in the last year? No -&gt; Yes!! 填yes后需要才会要求体检</p></li><li><p>注意要申请的是study permit，不是extend(续签)</p></li><li><p>如果要申请work permit， Is work an essential part of your study 选Yes!</p></li></ul><h2 id="1-client-info👤"><a href="#1-client-info👤" class="headerlink" title="1 client info👤"></a>1 client info👤</h2><ul><li><p>出生证明</p></li><li><p>Study Plan</p></li><li><ul><li>Why ca/neu</li><li>毕业计划回国</li><li>study plan </li><li>个人bg</li></ul></li><li><p>预体检回执</p></li><li><p>语言成绩单</p></li><li><p>成绩单</p></li><li><p>在读证明</p></li><li><p>身份证 + 翻译</p></li><li><p>亲属关系公证 -&gt;户口本 +翻译</p></li></ul><h2 id="2-financial-support💰"><a href="#2-financial-support💰" class="headerlink" title="2 financial support💰"></a>2 financial support💰</h2><ul><li>资金来源说明书 </li><li>存款证明 有中英文版本</li><li>银行流水 不需要翻译，用红框标出了工资</li><li>在职证明 中英翻译</li><li>房地产证书</li></ul><h2 id="3-forms"><a href="#3-forms" class="headerlink" title="3 forms"></a>3 forms</h2><ul><li>0104</li><li>1294<ul><li>时间写了2021.9 - 2023.6</li><li>资金写了95,000 CAD</li></ul></li><li>5257</li><li>5645</li></ul><h1 id="4-体检"><a href="#4-体检" class="headerlink" title="4 体检"></a>4 体检</h1><p>💰费用：1700 + 235（有纹身/耳洞加测）</p><p>地点：上海市闸北中心医院</p><p>流程：门口拍照 -&gt; 交护照复印件、护照、填表 -&gt; 换衣服准备体检</p><p>体检项目：尿检/常规（身高体重、视力、血压）/抽血/胸片/医生问诊（按压腹部检查等等</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>加拿大学签</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Visa</tag>
+      
+      <tag>Canada</tag>
       
     </tags>
     
