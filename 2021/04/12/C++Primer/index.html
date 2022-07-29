@@ -18,7 +18,7 @@
   <meta name="author" content="Yuhan">
   <meta name="keywords" content="">
   
-  <title>page.title - Yuhan&#39;s Blog</title>
+  <title>Book Notes - Yuhan&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
 
@@ -34,6 +34,8 @@
     
   
 
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   
 
 
@@ -62,7 +64,7 @@
 
 
 <body>
-  <header style="height: 60vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -156,14 +158,51 @@
 </nav>
 
     <div class="banner" id="banner" parallax=true
-         style="background: url('/img/default.png') no-repeat center center;
+         style="background: url('/img/IMG_3545.JPG') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
-        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.2)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="page.title">
+            <span class="h2" id="subtitle" title="Book Notes">
               
             </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-04-12 12:19" pubdate>
+        April 12, 2021 pm
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      602 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      7
+       分钟
+    </span>
+  
+
+  
+  
+</div>
 
             
           </div>
@@ -176,26 +215,120 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
+      
 
-<article class="page-content">
-  
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">Book Notes</h1>
+            
+            <div class="markdown-body">
+              <p>[toc]</p>
+<h1 id="Chanpter-1-开始"><a href="#Chanpter-1-开始" class="headerlink" title="Chanpter 1 开始"></a>Chanpter 1 开始</h1><h2 id="1-1-编写一个简单的C-程序"><a href="#1-1-编写一个简单的C-程序" class="headerlink" title="1.1 编写一个简单的C++程序"></a>1.1 编写一个简单的C++程序</h2><p><strong>函数定义包含四部分：</strong></p>
+<ul>
+<li>返回类型 return type</li>
+<li>函数名 function name</li>
+<li>函数体 function body</li>
+<li>形参列表 parameter list</li>
+</ul>
+<p><strong>最常用的编译器</strong>：</p>
+<p>GNU编译器 / 微软Visual Studio编译器</p>
+<ul>
+<li>GNU <code>g++ -o prog prog.cc</code>，如果省略 -o prog，则会生成一个a.out可执行文件</li>
+<li>Visual Studio  <code>[目录]&gt; c1 /EHsc prog1.cpp</code> 命令c1调用编译器，/EHsc是编译器选项，这样会自动生成一个可执行文件(.exe)，与源文件名对应。</li>
+</ul>
+<h2 id="1-2-输入输出"><a href="#1-2-输入输出" class="headerlink" title="1.2 输入输出"></a>1.2 输入输出</h2><p>C++语言未定义任何IO语句，但包含了一个全面的标准库来提供IO机制（及其他很多设施）。本书中示例多使用<strong>iostream库</strong>（istream/ostream）。</p>
+<p><strong>标准输入输出对象</strong></p>
+<p>istream类型:</p>
+<ul>
+<li><code>cin</code>标准输入 </li>
+</ul>
+<p>ostream类型：</p>
+<ul>
+<li><code>cout</code>标准输出 </li>
+<li><code>cerr</code> / <code>clog</code> 前者输出警告和错误信息，后者输出程序运行时的一般性信息。</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span> <span class="hljs-comment">//header</span></span><br><br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;<br>    std::cout&lt;&lt;<span class="hljs-string">&quot;Enter two numbers:&quot;</span>&lt;&lt;std::endl; <span class="hljs-comment">//字符串字面值常量</span><br>    <span class="hljs-keyword">int</span> v1 = <span class="hljs-number">0</span>, v2 = <span class="hljs-number">0</span>;<br>    std::cin&gt;&gt;v1&gt;&gt;v2;<br>    std::cout&lt;&lt;<span class="hljs-string">&quot;The sum of&quot;</span>&lt;&lt; v1 &lt;&lt;<span class="hljs-string">&quot;and&quot;</span>&lt;&lt; v2 &lt;&lt;<span class="hljs-string">&quot;is&quot;</span> &lt;&lt;v1+v2&lt;&lt;std::endl;<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-  
-</article>
 
-              </div>
+
+<p>&lt;&lt;运算符左侧是一个ostream对象（运算对象），右侧是要打印的值。</p>
+<p><strong>endl</strong> 操纵符 </p>
+<p><strong>::</strong> 作用域运算符</p>
+<p><strong>常见错误</strong></p>
+<ol>
+<li>语法错误</li>
+<li>类型错误，向int型传了字符串等。</li>
+<li>声明错误</li>
+</ol>
+<h2 id="1-5-类简介"><a href="#1-5-类简介" class="headerlink" title="1.5 类简介"></a>1.5 类简介</h2><p>C++最初的一个设计焦点就是能定义使用上像内置类型一样自然的<strong>类类型</strong> class type.</p>
+<p>每个类实际上都定义了一个新的类型，其类型就是类名。对于不属于标准库的头文件，使用双引号**” “**包围。</p>
+<p><strong>文件重定向</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs linux">$ addItems &lt;infile &gt; outfile<br></code></pre></td></tr></table></figure>
+
+<p>加法程序已编译名为addItems的可执行文件，上述命令会从一个名为infile的文件读取销售记录，并将输出结果写入到一个名为outfile的文件中。</p>
+<p><strong>成员函数</strong></p>
+<p>点运算符(<strong>.</strong>)只能用于类类型的对象，左侧运算对象必须是一个类类型的对象，右侧运算对象必须是该类型的一个成员名。使用点运算符访问一个成员函数时，我们会<strong>调用该函数。</strong></p>
+
             </div>
-          </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/04/03/Canada%20study%20permit/">
+                        <span class="hidden-mobile">🇨🇦master顺读签证准备过程记录 + timeline</span>
+                        <span class="visible-mobile">Nächster</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;TOC</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
 
     
@@ -275,7 +408,11 @@
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js" ></script>
 
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
 
 
 
